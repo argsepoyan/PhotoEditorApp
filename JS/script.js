@@ -1,6 +1,6 @@
-var foto;
+var photo;
 window.onload = function() {
-    foto = new Foto();
+    photo = new Foto();
 }
 
 function selectImage() { 
@@ -8,31 +8,31 @@ function selectImage() {
 }
 
 function makeGrayScale() {
-    foto.grayscale();
+    photo.grayscale();
 }
 
 function makeBright() {
-    foto.makeBright();
+    photo.makeBright();
 }
 
 function makeDark() {
-    foto.makeDark();
+    photo.makeDark();
 }
 
 function makeBlur() {
-    foto.applyBlurFilter();
+    photo.applyBlurFilter();
 }
 
 function makeEmboss() {
-    foto.applyEmbossFilter();
+    photo.applyEmbossFilter();
 }
 
 function makeSharp() {
-    foto.applySharpFilter();
+    photo.applySharpFilter();
 }
 
 function download() {
-    foto.export();
+    photo.export();
 }
 
 function openColorpicker() {
@@ -41,7 +41,7 @@ function openColorpicker() {
 
 function makeColorize(elem) {
     var color = elem.value;
-    foto.colorize(color);
+    photo.colorize(color);
 } 
 
 function openColorFilterPicker() {
@@ -54,17 +54,17 @@ function applyColorFilter(elem) {
 }
 
 function makeTransparent() {
-    foto.makeTransparent();
+    photo.makeTransparent();
 }
 
 function crop() {
-    foto.cropSelected();
+    photo.cropSelected();
 }
 
 function flipVertically() {
-    foto.flipVertically();
+    photo.flipVertically();
 }
 
 function rotate(elem) {
-    foto.rotate(elem.value);
+    photo.rotate(elem.value);
 }
